@@ -9,8 +9,121 @@
 </head>
 
 <body>
+    <!--h1 - заголовок першго рівня-->
     <h1>Hello world</h1>
-    <img src="img/IMG0785.jpg" width="200" alt="Photo malogo">
+    <!--h2 - заголовок другого рівня-->
+    <h2>I'm happy to be part of you</h2>
+    <!--img - додаємо зображення до нашого сайту-->
+    <img src="img/hand.jpg" width="200" alt="Give me a hand">
+    <div>
+    <!--a - посилання на зовнішню сторінку-->
+    <a href="https://www.google.com/">https://www.google.com/</a>
+    <br>
+    <!--a # - посилання на внутрішній розділ сторінки-->
+    <a href="#dots_list">Dots list</a>
+    </div>
+    <!--p - параграф-->
+    <p>Number list</p>
+    <!--ol - впорядкований список-->
+    <ol>
+        <li>My first experience</li>
+        <li>My second experience</li>
+        <li>My thurd experience</li>
+    </ol>
+    <p id="dots_list">Dots list</p>
+    <!--ul - невпорядкований маркований список-->
+    <ul>
+        <li>First dot</li>
+        <li>Second dot</li>
+        <li>Third dot</li>
+    </ul>
+    <!--<p><a> - вставка якірного елементу в абзац-->
+    <p>Just search here <a href="https://www.google.com/" target="_blank">Google</a> and enjoy!</p>
+    <!--# - dead посилання-->
+    <p>Test link <a href="#">Google</a></p>
+    <!--<a><img> - перетворюємо зображення на посилання-->
+    <p>Click here to earn more <a href="#"><img src="https://pomaka.com/wp-content/uploads/2021/05/GiveAhand.jpg" width="200" alt="Give a hand"></a> about us.</p>
+    <!--<input> - створення текстового поля-->
+    <input type="text">
+    <!--<input placeholder> - створення текстового поля з заповнювачем-->
+    <input type="text" placeholder="give a hand URL">
+    <!--<form> - створення форми-->
+        <form action="https://hand.community/">
+            <input type="text" placeholder="give a hand URL">
+        </form>
+    <!--<button> - створення кнопки відправки-->
+        <form action="https://hand.community/">
+            <input type="text" placeholder="give a hand URL">
+            <button type="submit">Submit</button>
+        </form> 
+    <!--<button> - html5 required-->
+        <form action="https://hand.community/">
+            <input type="text" placeholder="give a hand URL" required>
+            <button type="submit">Submit</button>
+        </form> 
+    <!--<label> - створення radio buttons-->
+        <label for="today"> 
+            <input id="today" type="radio" name="today-tomorrow">Today 
+          </label>
+        <label for="tomorrow"> 
+            <input id="tomorrow" type="radio" name="today-tomorrow">Tomorrow 
+        </label>
+        <br>
+    <!--<label> - створення набору checkboxes-->
+        <label for="smile"><input id="smile" type="checkbox" name="personality"> Smile</label>
+        <label for="love"><input id="love" type="checkbox" name="personality"> Love</label>
+        <label for="hug"><input id="hug" type="checkbox" name="personality"> Hug</label>
+        <br>
+    <!--<value> - значення кнопок-->  
+        <form action="https://hand.community/"> 
+        <label for="cat"> 
+            <input id="cat" value="cat" type="radio" name="cat-dog">Cat 
+          </label>
+        <label for="dog"> 
+            <input id="dog" value="dog" type="radio" name="cat-dog">Dog 
+        </label>
+        <div>
+            <label for="parrot"><input value="parrot" id="parrot" type="checkbox" name="personality"> Parrot</label>
+            <label for="mouse"><input value="mouse" id="mouse" type="checkbox" name="personality"> Mouse</label>
+            <label for="bird"><input value="bird" id="bird" type="checkbox" name="personality"> Bird</label>
+        </div>
+    </form> 
+        <!--<checked> автоматичне ввімкнення кнопки-->
+        <form action="https://hand.community/"> 
+            <label for="yellow"> 
+                <input id="yellow" value="yellow" type="radio" name="yellow-red"> Yellow 
+                </label>
+            <label for="red"> 
+                <input id="red" value="red" type="radio" name="yellow-red" checked> Red 
+            </label>
+            <div>
+                <label for="green"><input value="green" id="green" type="checkbox" name="personality" checked> Green</label>
+                <label for="brown"><input value="brown" id="brown" type="checkbox" name="personality"> Brown</label>
+                <label for="blue"><input value="blue" id="blue" type="checkbox" name="personality"> Blue</label>
+            </div>
+        </form>  
+        <!--<hr>горизонтальна лінія-->
+        <hr> 
+        <!--footer-->
+        <footer>
+        <!--повернення на головну сторінку при натисканні посилання-->
+            <a href="/index.html">Hand</a>
+        <!--<address> вставка адреси у футер сторінки-->
+            <address>
+              <ul>
+                <li>
+                  <a
+                    href="https://goo.gl/maps/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Best city, main street</a>
+                </li>
+                <li><a href="mailto:info@example.com">info@example.com</a></li>
+                <li><a href="tel:+380111111111">+38 011 111 11 11</a></li>
+              </ul>
+            </address>
+        </footer>
+      
 </body>
 
 </html>
